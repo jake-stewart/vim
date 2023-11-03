@@ -49,7 +49,7 @@ static char *(p_cm_values[]) = {"zip", "blowfish", "blowfish2",
 static char *(p_cmp_values[]) = {"internal", "keepascii", NULL};
 #ifdef FEAT_SYN_HL
 // Note: Keep this in sync with fill_culopt_flags()
-static char *(p_culopt_values[]) = {"line", "screenline", "number", "both", NULL};
+static char *(p_culopt_values[]) = {"line", "screenline", "number", "both", "breakindent", NULL};
 #endif
 static char *(p_dy_values[]) = {"lastline", "truncate", "uhex", NULL};
 static char *(p_jop_values[]) = {"stack", NULL};

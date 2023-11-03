@@ -8401,6 +8401,11 @@ fill_culopt_flags(char_u *val, win_T *wp)
 	    p += 10;
 	    culopt_flags_new |= CULOPT_SCRLINE;
 	}
+	else if (STRNCMP(p, "breakindent", 11) == 0)
+	{
+	    p += 11;
+	    culopt_flags_new |= CULOPT_BRINDENT;
+	}
 
 	if (*p != ',' && *p != NUL)
 	    return FAIL;
