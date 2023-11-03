@@ -1472,6 +1472,9 @@ A jump table for the options with a short description can be found at |Q_op|.
 		sbr	    Display the 'showbreak' value before applying the
 			    additional indent.
 			    (default: off)
+		cul	    Highlight the visual indent of the current line
+			    with hl-CursorLine.
+			    (default: off)
 		list:{n}    Adds an additional indent for lines that match a
 			    numbered or bulleted list (using the
 			    'formatlistpat' setting).

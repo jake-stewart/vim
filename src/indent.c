@@ -865,6 +865,7 @@ briopt_check(win_T *wp)
     int		bri_shift = 0;
     long	bri_min = 20;
     int		bri_sbr = FALSE;
+    int		bri_cul = FALSE;
     int		bri_list = 0;
     int		bri_vcol = 0;
 
@@ -888,6 +889,11 @@ briopt_check(win_T *wp)
 	    p += 3;
 	    bri_sbr = TRUE;
 	}
+	else if (STRNCMP(p, "cul", 3) == 0)
+	{
+	    p += 3;
+	    bri_cul = TRUE;
+	}
 	else if (STRNCMP(p, "list:", 5) == 0)
 	{
 	    p += 5;
@@ -907,6 +913,7 @@ briopt_check(win_T *wp)
     wp->w_briopt_shift = bri_shift;
     wp->w_briopt_min   = bri_min;
     wp->w_briopt_sbr   = bri_sbr;
+    wp->w_briopt_cul   = bri_cul;
     wp->w_briopt_list  = bri_list;
     wp->w_briopt_vcol  = bri_vcol;
 

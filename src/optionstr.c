@@ -26,7 +26,7 @@ static char *(p_bo_values[]) = {"all", "backspace", "cursor", "complete",
 				 "spell", "term", "wildmode", NULL};
 #if defined(FEAT_LINEBREAK)
 // Note: Keep this in sync with briopt_check()
-static char *(p_briopt_values[]) = {"shift:", "min:", "sbr", "list:", "column:", NULL};
+static char *(p_briopt_values[]) = {"shift:", "min:", "sbr", "cul", "list:", "column:", NULL};
 #endif
 #if defined(FEAT_DIFF)
 // Note: Keep this in sync with diffopt_changed()

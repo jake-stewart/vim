@@ -511,7 +511,10 @@ handle_breakindent(win_T *wp, winlinevars_T *wlv)
 # ifdef FEAT_DIFF
 	    if (wlv->diff_hlf != (hlf_T)0)
 		wlv->char_attr = HL_ATTR(wlv->diff_hlf);
+	    else
 # endif
+	    if (wlv->cul_attr && wp->w_briopt_cul)
+		wlv->char_attr = HL_ATTR(HLF_CUL);
 	    wlv->p_extra = NULL;
 	    wlv->c_extra = ' ';
 	    wlv->c_final = NUL;
